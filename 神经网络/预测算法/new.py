@@ -172,7 +172,7 @@ print("b3-->%.3f" % network.b3)
 plt.rcParams['font.sans-serif'] = ['SimHei']
 plt.rcParams['axes.unicode_minus'] = False
 # 测试数据
-testData = np.array([99, 3, 2, 2014])
+testData = np.array([100, 3, 2, 2014])
 testPrice = network.feedforward(testData)
 # 损失函数曲线图
 plt.plot(np.arange(100), network.loss)
