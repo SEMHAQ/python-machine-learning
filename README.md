@@ -7,4 +7,5 @@
 软件架构说明
 
 #### 使用说明
+sklearn中文社区：https://scikit-learn.org.cn/
 
