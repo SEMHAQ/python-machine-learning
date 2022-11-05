@@ -8,4 +8,5 @@
 
 #### 使用说明
 sklearn中文社区：https://scikit-learn.org.cn/
+波士顿房价data_url = "http://lib.stat.cmu.edu/datasets/boston"
 
