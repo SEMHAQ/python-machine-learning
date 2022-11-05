@@ -7,6 +7,7 @@
 软件架构说明
 
 #### 使用说明
-sklearn中文社区：https://scikit-learn.org.cn/
+sklearn中文社区：https://scikit-learn.org.cn/  
 波士顿房价：http://lib.stat.cmu.edu/datasets/boston
+
 
