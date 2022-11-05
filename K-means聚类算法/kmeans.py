@@ -12,12 +12,11 @@ from sklearn.cluster import KMeans
 X = []
 f = open('melon.txt', 'r')
 for line in f:
-    X.append(np.array(line.split(' '), dtype = np.string_).astype(np.float64))
-kmeans = KMeans(n_clusters = 3, random_state = 0).fit(X)
+    X.append(np.array(line.split(' '), dtype=np.string_).astype(np.float64))
+kmeans = KMeans(n_clusters=3, random_state=0).fit(X)
 
 colors = ['red', 'green', 'blue']
 
 for i, cluster in enumerate(kmeans.labels_):
-    plt.scatter(X[i][0], X[i][1], color = colors[cluster])
+    plt.scatter(X[i][0], X[i][1], color=colors[cluster])
 plt.show()
-

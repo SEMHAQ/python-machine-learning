@@ -4,25 +4,50 @@
 # Time:21:43
 # File:BernoulliNB.py
 # Software:PyCharm
-import pandas as pd
-import numpy as np
 
-X = np.array([[1.14, 1.78], [1.18, 1.96], [1.20, 1.86], [1.26, 2.00], [1.28, 2.00],
-              [1.30, 1.96], [1.24, 1.72], [1.36, 1.74], [1.38, 1.64], [1.38, 1.82],
-              [1.38, 1.90], [1.40, 1.70], [1.48, 1.82], [1.54, 1.82], [1.56, 2.08]])
-Y = np.hstack((np.ones(6), np.ones(9) * 2))  # 数组合并
+# 导入鸢尾花数据集
+from sklearn.datasets import load_iris
 
+# 数据选取
+iris_data = load_iris()['data']
+iris_target = load_iris()['target']
+
+# 用高斯模型进行预测并评估
+from sklearn.naive_bayes import GaussianNB
+mol = GaussianNB()
+result = mol.fit(iris_data,iris_target)
+pred1 = mol.predict(iris_data)
+# 对模型进行评估
+from sklearn.model_selection import cross_val_score
+scores = cross_val_score(mol,iris_data,iris_target,cv=10)
+# 对预测结果的正确个数进行计算
+print("高斯模型：")
+print("数据总数：",len(iris_data),"  错误个数：",(iris_target != pred1).sum())
+print("Accuracy:%.3f"%scores.mean())
+
+# 用贝努里模型进行预测和评估
 from sklearn.naive_bayes import BernoulliNB
+bnb = BernoulliNB()
+result2 = bnb.fit(iris_data,iris_target)
+pred2 = bnb.predict(iris_data)
+# 计算错误个数
+print("贝努里模型：")
+print("数据总数：",len(iris_data),"  错误个数：",(iris_target != pred2).sum())
+#模型评分
+scores2 = cross_val_score(bnb,iris_data,iris_target)
+print("Accuracy:%.3f"%scores2.mean())
 
-model = BernoulliNB()
-model.fit(X, Y)
+# 用多项式建立模型进行预测和评估
+from sklearn.naive_bayes import MultinomialNB
+mnb = MultinomialNB()
+result3 = mnb.fit(iris_data,iris_target)
+# 预测
+pred3 = result3.predict(iris_data)
+# 计算错误个数
+print("多项式模型：")
+print("数据总数：",iris_data.shape[0],"  错误个数：",(iris_target != pred3).sum())
+# 模型评分
+scores3 = cross_val_score(mnb,iris_data,iris_target)
+print("Accuracy:%.3f"%scores3.mean())
 
-print("预测结果")
-print(model.predict([[1.24, 1.80]]))
-print("样本为1类的概率")
-print(model.predict_proba([[1.24, 1.80]]))
-print("样本为2类的概率")
-print(model.predict_log_proba([[1.24, 1.80]]))
 
-print("预测结果")
-print(model.predict([[1.29, 1.81], [1.43, 2.03]]))
