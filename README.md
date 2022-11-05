@@ -10,7 +10,7 @@
 sklearn中文社区：https://scikit-learn.org.cn/  
 波士顿房价：http://lib.stat.cmu.edu/datasets/boston
 
-####波士顿房价数据集介绍  
+#### 波士顿房价数据集介绍  
  The Boston house-price data of Harrison, D. and Rubinfeld, D.L. 'Hedonic  
  prices and the demand for clean air', J. Environ. Economics & Management,  
  vol.5, 81-102, 1978.   Used in Belsley, Kuh & Welsch, 'Regression diagnostics  
