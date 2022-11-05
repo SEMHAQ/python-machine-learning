@@ -12,7 +12,6 @@ sklearn中文社区：https://scikit-learn.org.cn/
 所使用的到的数据集： **1、鸢尾花数据集；2、波士顿房价数据集。** 
 
 #### 波士顿房价数据集介绍  
-
 CRIM:城镇人均犯罪率  
 ZN:住宅用地超过25000 sq.ft.的比例  
 INDUS:城镇非零售商用土地的比例  
@@ -27,26 +26,9 @@ PTRATIO:城镇师生比例
 LSTAT:人口中地位低下者的比例  
 MEDV:自住房的平均房价，单位:千美元  
 
- The Boston house-price data of Harrison, D. and Rubinfeld, D.L. 'Hedonic  
- prices and the demand for clean air', J. Environ. Economics & Management,  
- vol.5, 81-102, 1978.   Used in Belsley, Kuh & Welsch, 'Regression diagnostics  
- ...', Wiley, 1980.   N.B. Various transformations are used in the table on  
- pages 244-261 of the latter.  
+#### 鸢尾花数据集介绍  
+iris_training.csv训练数据集，120条样本数据；iris_test.csv测试数据集，30条数据。其中有花萼长度（Sepal Length）、花萼宽度（Sepal Width）、花瓣长度（Petal Length）、花瓣宽度（Petal Width）四个属性。标签0、1、2分别表示山鸢尾（Setosa）、变色鸢尾（Versicolor）、维吉尼亚鸢尾（Virginical）。
 
- Variables in order:  
- CRIM         per capita crime rate by town  
- ZN           proportion of residential land zoned for lots over 25,000 sq.ft.  
- INDUS        proportion of non-retail business acres per town  
- CHAS         Charles River dummy variable (= 1 if tract bounds river; 0 otherwise)  
- NOX          nitric oxides concentration (parts per 10 million)  
- RM           average number of rooms per dwelling   
- AGE          proportion of owner-occupied units built prior to 1940  
- DIS          weighted distances to five Boston employment centres  
- RAD          index of accessibility to radial highways  
- TAX          full-value property-tax rate per 10,000 dollars  
- PTRATIO      pupil-teacher ratio by town  
- B            1000(Bk - 0.63)^2 where Bk is the proportion of blacks by town  
- LSTAT        % lower status of the population  
- MEDV         Median value of owner-occupied homes in $1000's  
+
 
 
