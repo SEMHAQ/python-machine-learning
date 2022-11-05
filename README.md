@@ -1,10 +1,10 @@
 # Python机器学习简单应用
 
 #### 介绍
-利用 **sklearn** 机器学习库进行分类与预测。该仓库提出了两种预测算法和两种分类算法，预测算法方面，利用了 **神经网络及支持向量机（SVM）**；分类算法方面，利用了 **K-Means聚类算法及朴素贝叶斯分类算法** 。
+利用 **sklearn** 机器学习库进行分类与预测。该仓库提出了两种预测算法和两种分类算法，预测算法方面，利用了 **线性回归及支持向量机（SVM）**；分类算法方面，利用了 **K-Means聚类算法及朴素贝叶斯分类算法** 。
 
 #### 项目架构
-需要用到的module有： **sklearn、pandas、numpy、matplotlib、seaborn、sys** 。  
+需要用到的module有： **sklearn、pandas、numpy、matplotlib、seaborn** 。  
 
 #### 使用说明
 sklearn中文社区：https://scikit-learn.org.cn/  
