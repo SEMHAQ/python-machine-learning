@@ -7,7 +7,7 @@
 # 导入鸢尾花数据集
 from sklearn.datasets import load_iris
 from sklearn.model_selection import cross_val_score
-
+import pandas as pd
 # 数据选取
 iris_data = load_iris()['data']
 iris_target = load_iris()['target']
@@ -32,3 +32,6 @@ print("Accuracy:%.3f" % scores.mean())
 
 print(iris_target)
 print(predict)
+
+df = pd.DataFrame({'data': iris_target, 'result': predict, 'diff': iris_target == predict})
+df.to_csv(r'E:\python-machine-learning\朴素贝叶斯分类算法\GaussianNB_result.csv', index=False)

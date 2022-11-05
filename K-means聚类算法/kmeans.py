@@ -47,6 +47,7 @@ print(label_pred)
 print(iris_target)
 print("数据总数：", len(X), "  错误个数：", (label_pred != iris_target).sum())
 
+
 df = pd.DataFrame(
     {'Column_1': X[:, 0], 'Column_2': X[:, 1], 'Column_3': X[:, 2], 'Column_4': X[:, 3], 'data': iris_target,
      'result': label_pred, 'diff': label_pred == iris_target})
