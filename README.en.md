@@ -1,36 +1,47 @@
-# Python机器学习简单应用
+# Simple applications of Python machine learning
 
-#### Description
-该仓库存放了本人学习机器学习过程中使用的Python代码，主要应用方向为数学建模。
+#### Introduction
+The  **sklearn**  machine learning repository is used for classification and prediction. The repository proposes two prediction algorithms and two classification algorithms, using  **linear regression and support vector machines (SVM)**  for prediction and  **K-Means clustering and plain Bayesian**  for classification.
 
-#### Software Architecture
-Software architecture description
+#### Project structure
+The modules to be used ： **sklearn、pandas、numpy、matplotlib、seaborn** 。  
 
-#### Installation
+#### Instructions for use
+sklearn Chinese Community：https://scikit-learn.org.cn/  
+Boston House Data：http://lib.stat.cmu.edu/datasets/boston  
+The data set used to ： **1、Boston House Data（Predict）；2、Iris data set（Classification）。** 
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+#### Introduction to the Boston House Price Dataset  
+| Indicators  | Explanation  |
+|---|---|
+| CRIM  |    per capita crime rate by town |
+| ZN  |  proportion of residential land zoned for lots over 25,000 sq.ft.  |
+| INDUS  |   proportion of non-retail business acres per town  |
+|  CHAS |  Charles River dummy variable (= 1 if tract bounds river; 0 otherwise)   |
+| NOX  |  nitric oxides concentration (parts per 10 million)  |
+| RM  |  average number of rooms per dwelling   |
+| AGE  |  proportion of owner-occupied units built prior to 1940   |
+|  DIS |  weighted distances to five Boston employment centres   |
+|  RAD |  index of accessibility to radial highways |
+|  TAX | full-value property-tax rate per $10,000   |
+|  PTRATIO |  pupil-teacher ratio by town   |
+|  B | 1000($B_k$−0.63)$^2$ where $B_k$ is the proportion of blacks by town |
+|  LSTAT |% lower status of the population   |
+|  MEDV | Median value of owner-occupied homes in $1000's   |
 
-#### Instructions
+#### Introduction to the Iris data set  
+iris_training.csv，Training data set，120 sample data；iris_test.csv，Test data set，30 sample data。  
+| Indicators |Explanation  |
+|---|---|
+| Sepal Length  |  Sepal Length |
+| Sepal Width |  Sepal Width   |
+| Petal Length | Petal Length  |
+|  Petal Width | Petal Width     |
+| 0  | Setosa  |
+| 1  | Versicolor|
+|2 | Virginical    |
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### Contribution
-
-1.  Fork the repository
-2.  Create Feat_xxx branch
-3.  Commit your code
-4.  Create Pull Request
 
 
-#### Gitee Feature
 
-1.  You can use Readme\_XXX.md to support different languages, such as Readme\_en.md, Readme\_zh.md
-2.  Gitee blog [blog.gitee.com](https://blog.gitee.com)
-3.  Explore open source project [https://gitee.com/explore](https://gitee.com/explore)
-4.  The most valuable open source project [GVP](https://gitee.com/gvp)
-5.  The manual of Gitee [https://gitee.com/help](https://gitee.com/help)
-6.  The most popular members  [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+
