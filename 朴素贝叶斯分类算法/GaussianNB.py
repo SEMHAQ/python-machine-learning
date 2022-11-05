@@ -29,3 +29,6 @@ print("数据总数：", len(iris_data), "  错误个数：", (iris_target != pr
 # 对模型进行评估
 scores = cross_val_score(model, iris_data, iris_target)
 print("Accuracy:%.3f" % scores.mean())
+
+print(iris_target)
+print(predict)

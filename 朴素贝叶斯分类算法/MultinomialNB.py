@@ -32,7 +32,8 @@ print("数据总数：", iris_data.shape[0], "  错误个数：", (iris_target !
 scores = cross_val_score(model, iris_data, iris_target)
 print("Accuracy:%.3f" % scores.mean())
 
-
+print(iris_target)
+print(predict)
 
 
 

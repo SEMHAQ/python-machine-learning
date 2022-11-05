@@ -5,15 +5,16 @@
 # File:BernoulliNB.py
 # Software:PyCharm
 
+from sklearn.model_selection import cross_val_score
+
 # 导入鸢尾花数据集
 from sklearn.datasets import load_iris
 
 # 数据选取
-from sklearn.model_selection import cross_val_score
+
 
 iris_data = load_iris()['data']
 iris_target = load_iris()['target']
-
 # 数据预览
 # print(iris_data)
 # print(iris_target)
@@ -32,4 +33,6 @@ print("数据总数：", len(iris_data), "  错误个数：", (iris_target != pr
 scores = cross_val_score(model, iris_data, iris_target)
 print("Accuracy:%.3f" % scores.mean())
 
+print(iris_target)
+print(predict)
 
