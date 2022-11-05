@@ -37,5 +37,6 @@ score = r2_score(y_test, predict)
 print(score)
 
 # 将结果在指定路径保存为csv
-df = pd.DataFrame({'result': predict})
+# data -> 原始数据 ; result -> 预测数据 ; diff -> 原始数据与预测数据之差
+df = pd.DataFrame({'data': y_test, 'result': predict, 'diff': y_test - predict})
 df.to_csv(r'E:\python-machine-learning\线性回归预测算法\result.csv', index=False)
